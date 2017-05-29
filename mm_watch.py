@@ -103,7 +103,7 @@ class MechMarketScrape(object):
 
 def main():
     script_directory = Path(__file__).resolve().parents[0]
-    config = script_directory / 'mm-watch.cfg'
+    config = script_directory / 'mm_watch.cfg'
     config_options = configobj.ConfigObj(str(config), file_error=True)
     pushbullet_access_token = config_options['pushbullet_access_token']
     pb = Pushbullet(pushbullet_access_token)
